@@ -1,0 +1,171 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Cyberpunk Battle Arena Design System - All colors MUST be HSL */
+
+@layer base {
+  :root {
+    /* Core Background Colors */
+    --background: 222 84% 5%;
+    --foreground: 200 100% 95%;
+
+    /* Card & Surface Colors */
+    --card: 222 47% 8%;
+    --card-foreground: 200 100% 90%;
+
+    --popover: 222 47% 6%;
+    --popover-foreground: 200 100% 95%;
+
+    /* Primary Neon Blue */
+    --primary: 196 100% 50%;
+    --primary-foreground: 222 84% 5%;
+    --primary-glow: 196 100% 70%;
+
+    /* Secondary Neon Cyan */
+    --secondary: 180 100% 50%;
+    --secondary-foreground: 222 84% 5%;
+    --secondary-glow: 180 100% 70%;
+
+    /* Muted Dark Blue */
+    --muted: 222 47% 12%;
+    --muted-foreground: 200 20% 60%;
+
+    /* Accent Neon Purple */
+    --accent: 270 100% 60%;
+    --accent-foreground: 222 84% 5%;
+    --accent-glow: 270 100% 80%;
+
+    /* Destructive Neon Red */
+    --destructive: 0 100% 60%;
+    --destructive-foreground: 200 100% 95%;
+
+    /* Borders & Inputs */
+    --border: 222 47% 15%;
+    --input: 222 47% 10%;
+    --ring: 196 100% 50%;
+
+    /* Battle Theme Colors */
+    --arena-gold: 45 100% 50%;
+    --arena-silver: 200 20% 80%;
+    --victory-green: 120 100% 50%;
+    --defeat-red: 0 100% 50%;
+
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-glow)));
+    --gradient-secondary: linear-gradient(135deg, hsl(var(--secondary)), hsl(var(--secondary-glow)));
+    --gradient-accent: linear-gradient(135deg, hsl(var(--accent)), hsl(var(--accent-glow)));
+    --gradient-arena: linear-gradient(180deg, hsl(var(--background)), hsl(222 47% 8%));
+    --gradient-battle: linear-gradient(45deg, hsl(var(--primary) / 0.2), hsl(var(--accent) / 0.2));
+
+    /* Shadows & Glows */
+    --shadow-neon: 0 0 20px hsl(var(--primary) / 0.5);
+    --shadow-accent: 0 0 20px hsl(var(--accent) / 0.4);
+    --shadow-glow: 0 0 40px hsl(var(--primary-glow) / 0.3);
+    --shadow-battle: 0 10px 30px -10px hsl(var(--background) / 0.8);
+
+    /* Animations */
+    --transition-neon: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-glow: all 0.4s ease-out;
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    /* Enhanced dark mode with deeper colors */
+    --background: 222 84% 3%;
+    --card: 222 47% 6%;
+    --muted: 222 47% 10%;
+    --border: 222 47% 12%;
+    --input: 222 47% 8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground overflow-x-hidden;
+    font-family: 'Inter', 'SF Pro Display', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+  }
+
+  /* Neon glow effects */
+  .neon-glow {
+    box-shadow: var(--shadow-neon);
+    transition: var(--transition-glow);
+  }
+
+  .neon-glow:hover {
+    box-shadow: var(--shadow-glow);
+  }
+
+  /* Battle arena effects */
+  .arena-glow {
+    background: var(--gradient-battle);
+    border: 1px solid hsl(var(--primary) / 0.3);
+  }
+
+  /* Scrolling animation */
+  @keyframes scroll-x {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+
+  .scroll-animation {
+    animation: scroll-x 30s linear infinite;
+  }
+
+  /* Pulse glow animation */
+  @keyframes pulse-glow {
+    0%, 100% {
+      box-shadow: 0 0 10px hsl(var(--primary) / 0.3);
+    }
+    50% {
+      box-shadow: 0 0 30px hsl(var(--primary) / 0.8);
+    }
+  }
+
+  .pulse-glow {
+    animation: pulse-glow 2s ease-in-out infinite;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: hsl(var(--muted));
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: hsl(var(--primary) / 0.5);
+    border-radius: 4px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: hsl(var(--primary));
+  }
+}
