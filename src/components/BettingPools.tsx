@@ -2,7 +2,8 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Progress } from "@/components/ui/progress";
-import { Clock, Users, Shield, Zap } from "lucide-react";
+import { Clock, Users, Shield, Zap, Lock, Eye } from "lucide-react";
+import { EncryptedBetting } from "./EncryptedBetting";
 
 const mockPools = [
   {
@@ -47,12 +48,17 @@ export const BettingPools = () => {
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold mb-4">
             <span className="bg-gradient-primary bg-clip-text text-transparent">
-              Active Betting Pools
+              ⚔️ Active Betting Pools
             </span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             Join encrypted betting pools where your wagers remain hidden until the final strike lands.
           </p>
+        </div>
+
+        {/* Encrypted Betting Interface */}
+        <div className="mb-12">
+          <EncryptedBetting />
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">

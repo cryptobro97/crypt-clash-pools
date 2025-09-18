@@ -1,24 +1,24 @@
-# Crypt Clash Pools - FHE-Encrypted PvP Arena
+# ⚔️ Crypt Clash Pools - FHE-Encrypted PvP Arena
 
 A decentralized PvP betting platform where bets remain encrypted using Fully Homomorphic Encryption (FHE) until match conclusion. Built with React, TypeScript, and blockchain integration.
 
-## 🚀 Features
+## ⚡ Core Features
 
-- **FHE-Encrypted Betting**: All bets are encrypted using Fully Homomorphic Encryption until match completion
-- **Multi-Wallet Support**: Connect with Rainbow, MetaMask, WalletConnect, and other popular wallets
-- **Real-time PvP Matches**: Join live combat pools and tournaments
-- **Transparent Results**: Decrypted results only after match conclusion
-- **Leaderboard System**: Track your performance across different pools
-- **Smart Contract Integration**: Deploy and interact with FHE-encrypted contracts
+- **🔐 FHE-Encrypted Betting**: All bets are encrypted using Fully Homomorphic Encryption until match completion
+- **💼 Multi-Wallet Support**: Connect with Rainbow, MetaMask, WalletConnect, and other popular wallets
+- **⚔️ Real-time PvP Matches**: Join live combat pools and tournaments
+- **🎯 Transparent Results**: Decrypted results only after match conclusion
+- **🏆 Leaderboard System**: Track your performance across different pools
+- **🔗 Smart Contract Integration**: Deploy and interact with FHE-encrypted contracts
 
-## 🛠 Technology Stack
+## 🛠 Technology Arsenal
 
-- **Frontend**: React 18, TypeScript, Vite
-- **UI Components**: shadcn/ui, Radix UI, Tailwind CSS
-- **Blockchain**: Wagmi, Viem, RainbowKit
-- **Encryption**: FHE (Fully Homomorphic Encryption)
-- **Networks**: Ethereum Sepolia Testnet
-- **Smart Contracts**: Solidity, OpenZeppelin, Hardhat
+- **⚛️ Frontend**: React 18, TypeScript, Vite
+- **🎨 UI Components**: shadcn/ui, Radix UI, Tailwind CSS
+- **⛓️ Blockchain**: Wagmi, Viem, RainbowKit
+- **🔐 Encryption**: FHE (Fully Homomorphic Encryption)
+- **🌐 Networks**: Ethereum Sepolia Testnet
+- **📜 Smart Contracts**: Solidity, OpenZeppelin, Hardhat
 
 ## 🚀 Quick Start
 
@@ -51,18 +51,20 @@ Create a `.env.local` file in the root directory:
 
 ```env
 NEXT_PUBLIC_CHAIN_ID=11155111
-NEXT_PUBLIC_RPC_URL=https://sepolia.infura.io/v3/b18fb7e6ca7045ac83c41157ab93f990
-NEXT_PUBLIC_WALLET_CONNECT_PROJECT_ID=2ec9743d0d0cd7fb94dee1a7e6d33475
-NEXT_PUBLIC_INFURA_API_KEY=b18fb7e6ca7045ac83c41157ab93f990
+NEXT_PUBLIC_RPC_URL=your_sepolia_rpc_url
+NEXT_PUBLIC_WALLET_CONNECT_PROJECT_ID=your_wallet_connect_project_id
+NEXT_PUBLIC_INFURA_API_KEY=your_infura_api_key
 ```
+
+**⚠️ Important**: Replace the placeholder values with your actual API keys and configuration.
 
 ## 🔐 Smart Contracts
 
 The platform uses FHE-encrypted smart contracts for secure betting:
 
-- **CryptClashPools**: Main contract managing betting pools and matches
-- **FHEEncryption**: FHE encryption/decryption utilities
-- **MockERC20**: Test token for development
+- **⚔️ CryptClashPools**: Main contract managing betting pools and matches
+- **🔐 FHEEncryption**: FHE encryption/decryption utilities
+- **💰 MockERC20**: Test token for development
 
 ### Deploy Contracts
 
@@ -81,9 +83,9 @@ npm run deploy:local
 
 ### Vercel Deployment (Recommended)
 
-1. **Connect Repository**: Link your GitHub repository to Vercel
-2. **Set Environment Variables**: Configure all required environment variables
-3. **Deploy**: Automatic deployment on push to main branch
+1. **🔗 Connect Repository**: Link your GitHub repository to Vercel
+2. **⚙️ Set Environment Variables**: Configure all required environment variables
+3. **🚀 Deploy**: Automatic deployment on push to main branch
 
 ### Quick Deploy Script
 
@@ -107,12 +109,12 @@ npm run preview
 
 ## 📱 Usage
 
-1. **Connect Wallet**: Use Rainbow, MetaMask, or WalletConnect
-2. **Create Pool**: Set entry fee and maximum participants
-3. **Join Pool**: Place encrypted bet using FHE
-4. **Start Match**: Automatic match start when pool is full
-5. **Reveal Bets**: Decrypt and reveal bets after match completion
-6. **Claim Prize**: Winner automatically receives prize
+1. **💼 Connect Wallet**: Use Rainbow, MetaMask, or WalletConnect
+2. **⚔️ Create Pool**: Set entry fee and maximum participants
+3. **🔐 Join Pool**: Place encrypted bet using FHE
+4. **🎯 Start Match**: Automatic match start when pool is full
+5. **🔓 Reveal Bets**: Decrypt and reveal bets after match completion
+6. **🏆 Claim Prize**: Winner automatically receives prize
 
 ## 🔧 Development
 

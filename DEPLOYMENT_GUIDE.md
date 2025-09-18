@@ -31,10 +31,12 @@ Add the following environment variables in Vercel dashboard:
 
 ```env
 NEXT_PUBLIC_CHAIN_ID=11155111
-NEXT_PUBLIC_RPC_URL=https://sepolia.infura.io/v3/b18fb7e6ca7045ac83c41157ab93f990
-NEXT_PUBLIC_WALLET_CONNECT_PROJECT_ID=2ec9743d0d0cd7fb94dee1a7e6d33475
-NEXT_PUBLIC_INFURA_API_KEY=b18fb7e6ca7045ac83c41157ab93f990
+NEXT_PUBLIC_RPC_URL=your_sepolia_rpc_url
+NEXT_PUBLIC_WALLET_CONNECT_PROJECT_ID=your_wallet_connect_project_id
+NEXT_PUBLIC_INFURA_API_KEY=your_infura_api_key
 ```
+
+**⚠️ Security Note**: Replace placeholder values with your actual API keys. Never commit real API keys to the repository.
 
 **How to add environment variables:**
 1. In your Vercel project dashboard
